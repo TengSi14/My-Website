@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <title>TengCure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for local css connection-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- start SideNav  -->
+<div class="side-nav">
+    <!-- start ProfilePic -->
+    <div class="img1">
+        <a href="/"><img src="/static/img/pic2.jpg" alt="no pic"></a>
+    </div>
+    <!-- end ProfilePic -->
+    <ul>
+        <li><a href="about">About</a></li>
+        <li><a href="career">Career</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="contact">Let's Talk</a></li>
+    </ul>    
+</div>
+<!-- end SideNav -->
+
+<!-- start Contents -->
+<div class="index">
+<div class = "comments">
+<label>sender: {{msg.name}}</label>
+<p>{{msg.msg}}</p>
+<p>{{msg.pub_date}}</p>
+</div>
+
+
+<div class="contact-message" style="border:1px">
+
+<form action="contact" method="post">
+
+    <table>        
+        <tr>
+            <td>Name : </td>
+            <td><input type="text" name="name" placeholder="Please write your name here"><br><br></td>
+        </tr>
+        <tr>
+            <td>Message: </td>
+            <td><textarea name="msg" placeholder="write your message here" style="height: 100px;"></textarea><br><br></td>
+        </tr>
+        <tr><td></td><td><input type="submit"></td></tr>
+    </table>
+
+</form>
+</div>
+</div>
+<!-- end Contents -->
+
+
+
+</body>
+</html>

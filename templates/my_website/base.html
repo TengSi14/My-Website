@@ -1,0 +1,55 @@
+{% load static %}
+<html lang="en">
+<head>
+    <title>TengCure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for local css connection-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <!-- start SideNav  -->
+    <aside class="side-nav">
+        <!-- start ProfilePic -->
+        <div class="img1">
+            <a href="#"><img src="static/img/shikamaru.jpg" alt="no pic"></a>
+        </div>
+        <!-- end ProfilePic -->
+    
+        <!-- start Profile Name -->
+    <div class="profile_name">Vincent Cura</div>
+        <!-- end Profile Name -->
+    
+        <!-- start Profile Name -->
+    <div class="sub_name">Python Developer</div>
+        <!-- end Profile Name -->
+    
+        <!-- start links -->
+        <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="skills">Skills</a></li>
+            <li><a href="career">Career</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contact">Let's Talk</a></li>
+        </ul>
+        <!-- end links -->    
+    
+    </aside>
+    <!-- end SideNav -->
+    
+    <!-- start Contents -->
+    <div class="index">
+        {% block content %}
+
+        {% endblock %}
+
+
+    </div>
+    <!-- end Contents -->
+    
+    
+
+</body>
+</html>
+    

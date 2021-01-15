@@ -1,0 +1,44 @@
+{% extends 'my_website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="table">
+        <section id="comments">
+            {% for msg in msgs%}
+            <div class = "message">
+                <div class="message-header">
+                    <label id="comments-name">{{msg.name}}</label>
+                    <label id="comments-date">{{msg.pub_date}}</label>
+                </div>
+                <p>{{msg.msg}}</p>
+            </div>
+            {% endfor %}
+        </section>
+
+        <section id="create-message">
+            <form action="contact" method="post">
+                {% csrf_token %}
+                <div class="Message-box">
+                <span><i>Leave a comment</i></span>
+                <input type="text" class="textbox" name="sender-name" placeholder="Name"><br>
+                 <textarea name="sender-msg" placeholder="Your Message here" style="width:300px; height:250px; margin-bottom:5px;"></textarea><br>
+                <input type="submit" value="Send">
+                </div>
+            </form>
+
+            <div class="contacts">
+                <strong>Contact Me:</strong><br>
+                    <span>Phone Number: +63 905 788 5534</span><br>
+                    <span>Email Address: cura.vincent01@gmail.com</span><br><br><br>
+                    <i class="socmed-icons"><a href="https://web.facebook.com/Bin10thCure" target="_blank"><img src="static/img/fb.png"></a></i>
+                    <i class="socmed-icons"><a href="https://twitter.com/CuraVincent" target="_blank"><img src="static/img/twitter.png"></a></i>
+                    <i class="socmed-icons"><a href="https://www.instagram.com/entengcura01" target="_blank"><img src="static/img/ig.png"></a></i>
+                    <i class="socmed-icons"><a href="https://www.linkedin.com/in/vincent-cura-aa605a182" target="_blank"><img src="static/img/linkedin.png"></a></i>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- end Contents -->
+
+{% endblock %}

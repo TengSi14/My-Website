@@ -1,0 +1,257 @@
+/* if you want to use a new font you need this block @font-face*/
+@font-face{
+    src: url(../fonts/Potra.ttf);
+    font-family: Potra;
+    }
+
+@font-face{
+    src: url(../My_Website/static/fonts/Outistyle\ Free.ttf);
+    font-family: Outistyle;
+    }
+
+
+.side-nav{
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 18px;
+    box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
+    background-color: #d1d3e0;
+}
+
+.side-nav ul li a{
+    list-style: none;
+    padding: 20px 8px 6px;
+    display: block;
+    text-decoration: none;
+    text-align: center;  
+    color:black;
+    position: relative;
+}
+
+.side-nav a:hover{
+    color: rgb(46, 46, 46);
+}
+
+.side-nav ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.img1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img1 img{
+    height: 165px;
+    width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+.profile_name {
+    text-align: center;
+    font-family: Cambria;
+    font-size: 30;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sub_name {
+    text-align: center;
+    font-family: Cambria;
+    font-size: 15;
+}
+
+.index{
+    /* box-shadow: 0 0 5px 2px rgba(175, 173, 173, 0.883); */
+    margin-left: 300px;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding: 5px 5px 5px 5px;   
+}
+
+
+/* -- Start About -- */
+.container-about{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.container > div.about-content{
+    width: 670px;
+    padding: 20px 0;
+}
+
+.container > div.about-img{
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.about-img img{
+    width: 250px;
+}
+
+.about-content p{
+    font-family: Montserrat;
+    font-size: medium;
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 33px;
+    margin-left: 50px;
+}
+
+.about_me{
+    font-family: Comfortaa;
+    font-size: large;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.about_title h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-size: x-large;
+    text-align: justify;
+}
+
+/* -- End About -- */
+
+/* -- Start Skills -- */
+#skills-software li h3{
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    font-size: larger;
+}
+
+#skills-topic li{
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+/* -- End Skills -- */
+
+/* -- Start Career -- */
+#career-title li h3{
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    font-size: larger;
+}
+
+#career-def li{
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+/* -- End Career -- */
+
+/* -- Start Projects -- */
+#project-title li h3{
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    font-size: larger;
+}
+
+#project-def li{
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+/* -- End Projects -- */
+
+/* -- Start Contact -- */
+.table {
+    position: relative;
+    /* box-shadow: 0 0 5px 2px rgba(175, 173, 173, 0.883); */
+}
+
+#comments {
+    /* box-shadow: 0 0 5px 2px rgba(175, 173, 173, 0.883); */
+    width: 600px;
+    position: absolute;
+    left: 0; 
+}
+
+.message {
+    box-shadow: 0 0 5px 2px rgba(175, 173, 173, 0.883);
+    width: auto;
+    -webkit-border-radius: 1em;
+    margin-bottom: 35px;
+}
+
+.message-header{
+    background-color: #07cfd693;
+    padding-left: 10px;
+    padding-top: 6px;
+    height: 26px;
+    -webkit-border-top-right-radius: 16px;
+    -webkit-border-top-left-radius: 16px;
+}
+
+.message p{
+    /* box-shadow: 0 0 5px 2px rgba(175, 173, 173, 0.883); */
+    font-family: Montserrat;
+    padding-bottom: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#create-message {
+    width: 400px;
+    /* box-shadow: 0 0 5px 2px rgba(175, 173, 173, 0.883); */
+    position: absolute;
+    right: 0;   
+}
+
+.Message-box {
+    width: 400px;
+    /* box-shadow: 0 0 5px 2px rgba(175, 173, 173, 0.883); */
+    margin-left: 40px;
+}
+
+#comments-name {
+    font-weight: bold;
+}
+
+#comments-date {
+    font-style: italic;
+    font-size: small;
+}
+
+.textbox {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.socmed-icons img{
+    width: 30px;
+    height: 30px;
+}
+
+.contacts {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+/* -- End Contact -- */
+
+
+
+
+
+
+
+
